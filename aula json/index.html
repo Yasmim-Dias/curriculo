@@ -52,6 +52,7 @@ x<!DOCTYPE html>
                                 <td>Data</td>
                                 <td>Jogador</td>
                                 <td>Quantidade de Estrelas</td>
+                                <th>Patente</th>
                             </tr>
                             <tr v-for="p in partidas" :key="p.codigo">
 
@@ -59,6 +60,7 @@ x<!DOCTYPE html>
                                <td> {{p.data}}</td>
                                <td> {{p.jogador.nickname}}</td>
                                <td> {{p.jogador.qtd_estrela}}</td>
+                               <td> {{p.patente.descricao}}</td>
                             </tr>
 
                         </table>
